@@ -18,7 +18,7 @@ const getTotalIsles = function (grid) {
       dfs(r + 1, c); // down
       dfs(r - 1, c); // up
       dfs(r, c + 1); // right
-      dfs(r, c - 1); // left
+      dfs(r, c - 1); 
   };
 
   for (let i = 0; i < rows; i++) {

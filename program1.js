@@ -27,7 +27,7 @@ const getTotalIsles = function (grid) {
           if (grid[i][j] === 'L') {
               // Found an island
               islandCount++;
-              // Start DFS to mark all connected parts
+            
               dfs(i, j);
           }
       }

@@ -11,7 +11,7 @@ const getTotalIsles = function (grid) {
           return;
       }
       
-      // Mark the cell as visited
+      
       grid[r][c] = 'W';
       dfs(r + 1, c); 
       dfs(r - 1, c); 

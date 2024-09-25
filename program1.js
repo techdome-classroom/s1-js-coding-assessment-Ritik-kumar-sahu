@@ -6,7 +6,7 @@ const getTotalIsles = function (grid) {
   let islandCount = 0;
 
   const dfs = (r, c) => {
-      // Check boundaries
+      
       if (r < 0 || r >= rows || c < 0 || c >= cols || grid[r][c] === 'W') {
           return;
       }

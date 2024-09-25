@@ -21,11 +21,9 @@ const getTotalIsles = function (grid) {
       dfs(r, c - 1); // left
   };
 
-  // Iterate over the grid
   for (let i = 0; i < rows; i++) {
       for (let j = 0; j < cols; j++) {
           if (grid[i][j] === 'L') {
-              // Found an island
               islandCount++;
               dfs(i, j);
           }

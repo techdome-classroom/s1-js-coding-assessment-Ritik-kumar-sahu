@@ -13,8 +13,6 @@ const getTotalIsles = function (grid) {
       
       // Mark the cell as visited
       grid[r][c] = 'W';
-      
-      // Explore all four directions
       dfs(r + 1, c); 
       dfs(r - 1, c); 
       dfs(r, c + 1); 
